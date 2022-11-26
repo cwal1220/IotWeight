@@ -26,7 +26,7 @@
 
     <TextView
         android:id="@+id/weightView"
-        android:layout_width="95dp"
+        android:layout_width="150dp"
         android:layout_height="69dp"
         android:layout_marginTop="48dp"
         android:gravity="center"
@@ -36,29 +36,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/resultView"
-        android:layout_width="290dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="48dp"
-        android:text="수신대기중..."
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="173dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="316dp"
-        android:text="결과"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"

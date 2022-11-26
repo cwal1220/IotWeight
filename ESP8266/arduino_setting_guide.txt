@@ -1,0 +1,9 @@
+* 드라이버 설치
+폴더 내의 'CP210x_Windows_Drivers' 압축 파일 해제 후 설치
+
+* 아두이노 IDE 설정
+1. 파일->환경설정-> 추가적인 보드 URL-> http://arduino.esp8266.com/stable/package_esp8266com_index.json
+2. 툴->보드->보드매니저->contributed선택->esp8266설치
+3. 툴->보드->ESP->NodeMCU 1.0 선택
+4. 스케치->라이브러리 포함하기->라이브러리 관리->HX711 Arduino Library 검색 -> 설치
+5. 스케치->라이브러리 포함하기->.ZIP 라이브러리 추가->폴더 내의 pubsubclient-master.zip 파일 선택

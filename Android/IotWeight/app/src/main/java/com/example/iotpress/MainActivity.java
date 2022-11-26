@@ -53,17 +53,13 @@ public class MainActivity extends AppCompatActivity {
         // View 설정
         weightView = (TextView) findViewById(R.id.weightView);
         sensorTimeView = (TextView) findViewById(R.id.sensorTimeView);
-        resultView = (TextView) findViewById(R.id.resultView);
 
-//        Intent weightMqttServiceIntent = new Intent(MainActivity.this, WeightMqttService.class);
         Intent weightMqttServiceIntent = new Intent(MainActivity.this, MqttService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             startForegroundService(weightMqttServiceIntent);
         } else {
             startService(weightMqttServiceIntent);
         }
-
-
 
         // 시간 format 구성
         SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SSS");
